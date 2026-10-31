@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#e6e4ed"/>
+  <text x="80" y="95" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#5b4a6e" letter-spacing="2">A FRAMEWORK / MICHAEL BORCK</text>
+  <text x="80" y="240" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="bold" fill="#202926">Conversation,</text>
+  <text x="80" y="320" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="bold" fill="#5b4a6e">not Delegation.</text>
+  <text x="80" y="390" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#5d5a50">How to think with AI, not just use it.</text>
+  <line x1="80" y1="440" x2="540" y2="440" stroke="#5b4a6e" stroke-width="4"/>
+  <text x="80" y="515" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#202926">Delegation outsources judgment.</text>
+  <text x="80" y="555" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="bold" fill="#202926">Conversation preserves it.</text>
+  <text x="1120" y="580" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#5d5a50">conversationnotdelegation.com</text>
+
+  <g transform="translate(760 210)">
+    <circle cx="120" cy="120" r="105" fill="none" stroke="#5b4a6e" stroke-width="4" stroke-dasharray="10 14"/>
+    <circle cx="120" cy="15" r="14" fill="#5b4a6e"/>
+    <circle cx="225" cy="120" r="14" fill="#5b4a6e"/>
+    <circle cx="120" cy="225" r="14" fill="#5b4a6e"/>
+    <circle cx="15" cy="120" r="14" fill="#5b4a6e"/>
+    <text x="120" y="128" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="bold" fill="#202926">4</text>
+    <text x="120" y="156" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#5d5a50">moves</text>
+  </g>
+</svg>

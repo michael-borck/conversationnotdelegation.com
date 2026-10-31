@@ -1,157 +1,163 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const cndBook = 'https://michael-borck.github.io/conversation-not-delegation';
+const partnerBook = 'https://michael-borck.github.io/partner-dont-police';
+const substantiateBook = 'https://michael-borck.github.io/substantiate-dont-assume';
+const humanEdge = 'https://thehumanedge.borck.dev';
+const books = 'https://books.borck.education';
+const consulting = 'https://borck.consulting/services';
 ---
 <Base>
 
-<div class="page">
+<header class="topbar">
+  <a class="wordmark" href="/">Conversation, <span>Not Delegation</span></a>
+  <nav class="nav">
+    <a href={humanEdge}>The Human Edge</a>
+    <a href={books}>Books</a>
+    <a href={consulting}>Consulting</a>
+  </nav>
+</header>
 
-  <p class="eyebrow">A framework · Michael Borck</p>
-  <h1 class="title">Conversation, not Delegation.</h1>
-  <p class="subtitle">A framework for using AI as a collaborator, not a delegate.</p>
+<main>
 
-  <section class="manifesto">
-    <p class="lead">
-      The dominant pattern of AI use in professional work is delegation. A problem
-      arrives. The work is handed to a model. A polished result comes back. The
-      work appears to be done.
-    </p>
-    <p>
-      The cost of this pattern is not in the output. The output is often serviceable.
-      The cost is in what stops happening in the head of the person who used to do
-      the work — the small, quiet, judgment-forming activity that used to happen
-      between problem and answer, and that is the actual substance of professional
-      practice.
-    </p>
-    <p>
-      Conversation is the alternative posture. Conversing with an AI is not the same
-      as asking it for an answer. It is brainstorming with it, ideating against it,
-      interacting with the output it produces, pushing back when it produces something
-      that looks plausible but is wrong. The work that used to happen quietly stays
-      where it should: in the head of the practitioner, with the model as a counterpart
-      rather than a substitute.
-    </p>
-    <p>
-      Conversation preserves judgment. Delegation outsources it. The distinction is
-      not philosophical. It is operational, and it is the difference between a firm
-      whose use of AI strengthens its practice and one whose use quietly hollows it out.
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">A framework · Michael Borck</p>
+      <h1>Conversation,<br /><span>not Delegation.</span></h1>
+      <p class="subtitle">How to think with AI, not just use it.</p>
+      <p class="lead">Delegation outsources judgment. Conversation preserves it.</p>
+      <p class="body">
+        A problem arrives. The work is handed to a model. A polished result comes back.
+        The work appears to be done. The cost is not in the output. It is in what stops
+        happening in the head of the person who used to do the work.
+      </p>
+      <div class="actions">
+        <a class="btn" href={cndBook}>Read the book</a>
+        <a class="btn btn-ghost" href={humanEdge}>The workplace book</a>
+      </div>
+    </div>
+    <div class="hero-cover">
+      <img
+        src="/covers/conversation-not-delegation.png"
+        alt="Conversation, Not Delegation: How to Think With AI, Not Just Use It by Michael Borck"
+        width="600"
+        height="900"
+      />
+    </div>
+  </section>
+
+  <section class="pullquote">
+    <p>The work that used to happen quietly stays where it should: in the head of the practitioner.</p>
+  </section>
+
+  <section class="section">
+    <p class="section-kicker">The problem</p>
+    <h2>Delegation looks efficient. It is not free.</h2>
+    <div class="split">
+      <p>
+        A fluent answer is not the same as a considered one. The output is often
+        serviceable. The judgment behind it is what disappears when the work is handed
+        over without a conversation.
+      </p>
+      <p>
+        The small, quiet activity between problem and answer is the substance of
+        professional practice. Conversation keeps it in the practitioner. Delegation
+        moves it into the model and hopes nobody notices.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="section-kicker">The conversation loop</p>
+    <h2>Four moves, one loop.</h2>
+    <div class="grid">
+      <article class="card">
+        <p class="card-num">01</p>
+        <h3>Brainstorm</h3>
+        <p>Define the question. Arrive with a problem worth thinking about, not a task to outsource.</p>
+      </article>
+      <article class="card">
+        <p class="card-num">02</p>
+        <h3>Ideate</h3>
+        <p>Explore possibilities. Use the model's breadth, but do not stop at the first interesting output.</p>
+      </article>
+      <article class="card">
+        <p class="card-num">03</p>
+        <h3>Iterate</h3>
+        <p>Push back and refine. Correct course. Disagree on substance. Stay here longer than feels necessary.</p>
+      </article>
+      <article class="card">
+        <p class="card-num">04</p>
+        <h3>Amplify</h3>
+        <p>Make it yours. Edit, restructure, combine, and cut until you would put your name on it.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="section-kicker">The books</p>
+    <h2>The framework, and the companions.</h2>
+    <div class="book-grid">
+      <a class="book-card" href={cndBook}>
+        <img src="/covers/conversation-not-delegation.png" alt="Conversation, Not Delegation book cover" loading="lazy" />
+        <span class="book-title">Conversation, Not Delegation</span>
+        <span class="book-sub">How to Think With AI, Not Just Use It</span>
+      </a>
+      <a class="book-card" href={partnerBook}>
+        <img src="/covers/partner-dont-police.png" alt="Partner, Don't Police book cover" loading="lazy" />
+        <span class="book-title">Partner, Don't Police</span>
+        <span class="book-sub">AI in the Business Classroom</span>
+      </a>
+      <a class="book-card" href={substantiateBook}>
+        <img src="/covers/substantiate-dont-assume.png" alt="Substantiate, Don't Assume book cover" loading="lazy" />
+        <span class="book-title">Substantiate, Don't Assume</span>
+        <span class="book-sub">Why the Auditor's Opinion Matters More Than Ever in the Age of AI</span>
+      </a>
+      <a class="book-card" href={humanEdge}>
+        <img src="/covers/the-human-edge.png" alt="The Human Edge book cover" loading="lazy" />
+        <span class="book-title">The Human Edge</span>
+        <span class="book-sub">Using AI with Judgement</span>
+      </a>
+    </div>
+    <p class="book-more">
+      All books are free to download at <a href={books}>books.borck.education</a>.
     </p>
   </section>
 
-  <hr class="section-divider" />
+  <section class="section bridge">
+    <div>
+      <p class="section-kicker">The workplace book</p>
+      <h2>The Human Edge.</h2>
+      <p class="section-lead">
+        When everyone has the same AI tools, generic competence is the baseline. The
+        edge is judgement. The Human Edge is the companion for professionals who have
+        to sign their name to the output.
+      </p>
+    </div>
+    <a class="btn" href={humanEdge}>Read The Human Edge</a>
+  </section>
 
-  <p class="section-eyebrow">The conversation loop</p>
+  <section class="section">
+    <p class="section-kicker">In practice</p>
+    <h2>Applying this in a regulated firm is different work.</h2>
+    <p class="section-lead">
+      Reading the framework is one thing. Changing how a firm briefs, checks, and signs
+      off AI-assisted work is another. That is what borck.consulting is for.
+    </p>
+    <a class="text-link" href={consulting}>See the consulting practice →</a>
+  </section>
 
-  <div class="moves">
-    <div class="move">
-      <div class="move-name"><span class="num">01</span>Brainstorm</div>
-      <p class="move-desc">
-        Define your question. Arrive with a problem worth thinking about, not a
-        task to outsource. The quality of what comes out of the loop is bounded
-        by what you bring in. Before prompting, check whether you are describing
-        the problem or your attempted fix; if it is the fix, step back one level.
-      </p>
-    </div>
-    <div class="move">
-      <div class="move-name"><span class="num">02</span>Ideate</div>
-      <p class="move-desc">
-        Explore possibilities. Generative and divergent — alternative angles,
-        adjacent ideas, framings you had not considered. The AI's breadth across
-        domains is genuinely useful here. Resist the temptation to stop at the
-        first interesting output.
-      </p>
-    </div>
-    <div class="move">
-      <div class="move-name"><span class="num">03</span>Iterate</div>
-      <p class="move-desc">
-        Push back and refine. This is where conversation actually happens, and
-        where delegation is most tempting. Correct course. Redirect. Disagree on
-        substance. Every response sharpens the output, and every one requires
-        your judgement. Stay in this stage longer than feels necessary.
-      </p>
-    </div>
-    <div class="move">
-      <div class="move-name"><span class="num">04</span>Amplify</div>
-      <p class="move-desc">
-        Make it yours. Take the best of what emerged and edit, restructure,
-        combine, cut. Bring it into your voice, your context, your standards.
-        The result should be something you would put your name on without
-        hesitation.
-      </p>
-    </div>
-  </div>
+</main>
 
-  <p style="font-family: var(--font-sans); font-size: 0.92rem; color: var(--gray-2); line-height: 1.6; margin-top: 1.5rem; text-align: center; font-style: italic;">
-    Most good work loops more than once. The arrows go forward, but the feedback
-    arc is always available — Brainstorm again with a sharper question, return to
-    Ideate when iteration reveals a gap. The sign that you are done is not that
-    the AI has stopped producing output; it is that your thinking has landed
-    somewhere solid.
+<footer class="footer">
+  <p>Michael Borck · <a href="mailto:michael@borck.dev">michael@borck.dev</a></p>
+  <p class="footer-links">
+    <a href={humanEdge}>The Human Edge</a>
+    <a href={books}>Books</a>
+    <a href={consulting}>Consulting</a>
+    <a href="https://borck.dev">borck.dev</a>
   </p>
-
-  <hr class="section-divider" />
-
-  <p class="section-eyebrow">The books</p>
-
-  <div class="books">
-    <a class="book" href="https://books.borck.education">
-      <div class="book-title">Conversation not Delegation</div>
-      <div class="book-desc">
-        The framework in detail — the four moves, the principles, the
-        practical applications.
-      </div>
-    </a>
-    <a class="book" href="https://books.borck.education">
-      <div class="book-title">Partner Don't Police</div>
-      <div class="book-desc">
-        Applying the framework in a teaching context. Adopted onto the reading
-        list at Kaplan Business School.
-      </div>
-    </a>
-  </div>
-
-  <p style="font-family: var(--font-sans); font-size: 0.92rem; color: var(--gray-1); line-height: 1.6; margin-top: 1.5rem; text-align: center;">
-    Both books are free to download at
-    <a href="https://books.borck.education">books.borck.education</a>
-    under CC BY-SA 4.0, also available on Amazon. Each comes with a companion
-    chatbot, a navigable wiki, and GitHub access to source material.
-  </p>
-
-  <div class="cta-block">
-    <p class="cta-text">
-      The method is Conversation, Not Delegation. The workplace book is
-      <em>The Human Edge</em>: what to do when the output has consequences.
-    </p>
-    <a class="cta-link" href="https://thehumanedge.borck.dev">
-      Read The Human Edge →
-    </a>
-  </div>
-
-  <div class="cta-block">
-    <p class="cta-text">
-      This is more than a book — it is how I teach, build, and research. See the
-      tools, courses, and experiments I have made to put it into practice.
-    </p>
-    <a class="cta-link" href="https://bigpicture.borck.dev">
-      See the work → bigpicture.borck.dev
-    </a>
-  </div>
-
-  <div class="cta-block">
-    <p class="cta-text">
-      Applying this in a regulated Australian small firm is a different kind of
-      work than reading it. That is what borck.consulting is for.
-    </p>
-    <a class="cta-link" href="https://borck.consulting/services">
-      Apply this in your business →
-    </a>
-  </div>
-
-  <footer class="footer">
-    Michael Borck · <a href="https://borck.consulting">borck.consulting</a> ·
-    <a href="mailto:michael@borck.dev">michael@borck.dev</a><br />
-    More books at <a href="https://books.borck.education">books.borck.education</a>
-  </footer>
-
-</div>
+</footer>
 
 </Base>
